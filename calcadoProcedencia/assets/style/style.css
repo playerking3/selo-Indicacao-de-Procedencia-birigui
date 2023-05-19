@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root{
+    --roxo: #613C97;
+    --roxo-escuro: #3C1F67;
+    --magenta: #EE3483;
+    --magenta-escuro: #A70047;
+    --amarelo: #F3B635;
+    --azul: #19ADE4;
+    --cinza1: #8F9193;
+    --dourado: #BD936A;
+    --cinza2: #C0C3C3;
+    --preto: #131A1C;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #613c97 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #613c97;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+#site{
+    transition: all 0.5s;
+}
+
+@font-face {
+    font-family: 'Brillotus';
+    src: url(../fonts/Brillotus.otf) format("opentype");
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/image-1.png);
+    background-size: cover;
+    color: white;
+}
+
+.intro h1{
+    margin: 2rem;
+    font-family: 'Brillotus';
+    font-size: 6em;
+}
+
+.intro h2{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    text-align: center;
+}
+
+.intro img{
+    width: 20%;
+    margin: 4rem;
+}
+
+.dourado{
+    color: var(--dourado);
+}
+
+.intro button{
+    margin: 2rem;
+    scale: 1.4;
+}
+
+.btn4{
+    padding: 0.5rem;
+    border: solid 1px var(--roxo);
+    border-radius: 0.5rem;
+    background-color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn4:hover{
+    box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+}
+
+.btn4:active{
+    box-shadow: inset 5px 4px 3px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+}
+
+.header{
+    height: max-content;
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+}
+
+.header nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: sticky;
+    top: 0px;
+
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#conteudo{
+    display: none;
+}
+
+/* finalmente dentro da main */
+
+.introducao{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.introducao img{
+    width: 100%;
+}
+
+.introducao div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introTxt{
+    padding: 4em;
+    text-align: justify;
+}
+
+.custom-shape-divider-bottom-1684527434 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684527434 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1684527434 .shape-fill {
+    fill: var(--roxo);
+}
+
+.que{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo);
+    color: white;
+}
+
+.que h2{
+    margin: 2em;
+    font-family: 'Brillotus';
+    font-size: xx-large;
+}
+
+.que p{
+    padding-left: 6em;
+    padding-right: 6em;
+    text-align: justify;
+}
