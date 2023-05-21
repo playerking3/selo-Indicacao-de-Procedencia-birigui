@@ -21,6 +21,14 @@ function sobeHeader(){
                     sublinha.style.top = linkInfo[2].bottom - 3 + "px"
                     sublinha.style.width = linkInfo[2].width + "px"
                     sublinha.style.left = linkInfo[2].x + "px"
+                }else if(selo.getBoundingClientRect().bottom > 0){
+                    sublinha.style.top = linkInfo[3].bottom - 3 + "px"
+                    sublinha.style.width = linkInfo[3].width + "px"
+                    sublinha.style.left = linkInfo[3].x + "px"
+                }else if(componentes.getBoundingClientRect().bottom > 0){
+                    sublinha.style.top = linkInfo[4].bottom - 3 + "px"
+                    sublinha.style.width = linkInfo[4].width + "px"
+                    sublinha.style.left = linkInfo[4].x + "px"
                 }
             })
         })
@@ -51,6 +59,8 @@ function pretoBranco(img){
 let que = document.getElementById("que")
 let introducao = document.getElementById("introducao")
 let beneficios = document.getElementById("beneficios")
+let selo = document.getElementById("selo")
+let componentes = document.getElementById("componentes")
 
 let linkInfo = []
 let sublinha = document.getElementById('sublinhado')
