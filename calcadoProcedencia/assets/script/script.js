@@ -31,6 +31,7 @@ function sobeHeader(){
                     sublinha.style.left = linkInfo[4].x + "px"
                 }
             })
+            carrossel()
         })
     });
     
@@ -65,3 +66,26 @@ let componentes = document.getElementById("componentes")
 let linkInfo = []
 let sublinha = document.getElementById('sublinhado')
 let a = document.getElementsByClassName('linkes')
+let i = 0
+
+function carrossel(){
+    let reparticao = document.getElementsByClassName("reparticao")
+    let explicacao = document.getElementsByClassName('explicacao')
+    if(i > 7){
+        explicacao[7].style.display = "none"
+        pretoBranco(reparticao[7]) 
+        i = 0
+    }
+    if (i == 0) {
+        colorido(reparticao[i])
+        explicacao[i].style.display = "flex"  
+        i++      
+    }else{
+        pretoBranco(reparticao[i-1])
+        colorido(reparticao[i])
+        explicacao[i-1].style.display = "none"
+        explicacao[i].style.display = "flex"
+        i++
+    }
+    setTimeout(carrossel, 5000)
+}

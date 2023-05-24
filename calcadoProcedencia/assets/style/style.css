@@ -326,9 +326,10 @@
     align-items: center;
 }
 
-.tutorial{
-    color: var(--amarelo);
-    font-size: small;
+.explicacao{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .explicacao p{
@@ -339,4 +340,8 @@
 .placeholder{
     width: 80%;
     opacity: 0;
+}
+
+#compoTitulo{
+    color: var(--roxo-escuro);
 }
