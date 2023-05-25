@@ -286,6 +286,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8em;
 }
 
 .componentesgrid{
@@ -344,4 +345,25 @@
 
 #compoTitulo{
     color: var(--roxo-escuro);
+}
+
+.uso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7em;
+    text-align: justify;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background: var(--roxo-escuro);
+    color: white;
+}
+
+.rodape a{
+    color: white;
 }

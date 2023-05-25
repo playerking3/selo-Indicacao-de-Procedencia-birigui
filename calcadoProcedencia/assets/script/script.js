@@ -29,6 +29,10 @@ function sobeHeader(){
                     sublinha.style.top = linkInfo[4].bottom - 3 + "px"
                     sublinha.style.width = linkInfo[4].width + "px"
                     sublinha.style.left = linkInfo[4].x + "px"
+                }else if(uso.getBoundingClientRect().top > 0){
+                    sublinha.style.top = linkInfo[5].bottom - 3 + "px"
+                    sublinha.style.width = linkInfo[5].width + "px"
+                    sublinha.style.left = linkInfo[5].x + "px"
                 }
             })
             carrossel()
@@ -62,6 +66,7 @@ let introducao = document.getElementById("introducao")
 let beneficios = document.getElementById("beneficios")
 let selo = document.getElementById("selo")
 let componentes = document.getElementById("componentes")
+let uso = document.getElementById("uso")
 
 let linkInfo = []
 let sublinha = document.getElementById('sublinhado')
