@@ -46,9 +46,19 @@
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: 'Brillotus';
     src: url(../fonts/Brillotus.otf) format("opentype");
+}
+
+#some{
+    height: 100vh;
+    background-image: url(../img/image-1.png);
+    background-size: cover;
 }
 
 .intro{
@@ -124,9 +134,32 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
-    position: sticky;
+    position: relative;
     top: 0px;
+}
 
+.headerMobile{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    height: max-content;
+    background-color: var(--roxo);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+}
+
+.headerMobile p{
+    margin: 1em;
+}
+
+.mobile{
+    display: none;
 }
 
 .linkes{
